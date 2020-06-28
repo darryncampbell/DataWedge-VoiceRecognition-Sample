@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">DW Voice Recognition</string>
+    <string name="title_home">Call</string>
+    <string name="title_dashboard">Tasks</string>
+    <string name="title_notifications">Product Info</string>
+</resources>

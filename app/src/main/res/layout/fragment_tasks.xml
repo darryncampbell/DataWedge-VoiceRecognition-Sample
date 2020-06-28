@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragment_tasks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundTint="#000000"
+        android:foregroundTintMode="add"
+        tools:context=".ui.call.CallFragment">
+
+        <TextView
+            android:id="@+id/lblHeading2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Task Completed"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/avatar2"
+            app:layout_constraintTop_toTopOf="@+id/avatar2" />
+
+        <ImageView
+            android:id="@+id/avatar1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_build"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblPTTKey" />
+
+        <TextView
+            android:id="@+id/txtSay1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text='Say: "What is my next task?"'
+            app:layout_constraintBottom_toBottomOf="@+id/imgMic1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgMic1"
+            app:layout_constraintTop_toTopOf="@+id/imgMic1" />
+
+        <ImageView
+            android:id="@+id/avatar2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_build"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/avatar1" />
+
+        <TextView
+            android:id="@+id/lblHeading3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Find out Current Task"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/avatar3"
+            app:layout_constraintTop_toTopOf="@+id/avatar3" />
+
+        <ImageView
+            android:id="@+id/imgMic1"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_microphone"
+            app:layout_constraintBottom_toBottomOf="@+id/avatar1"
+            app:layout_constraintEnd_toStartOf="@+id/txtSay1"
+            app:layout_constraintStart_toEndOf="@+id/avatar1"
+            app:layout_constraintTop_toBottomOf="@+id/lblHeading1" />
+
+        <ImageView
+            android:id="@+id/avatar3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_build"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/avatar2" />
+
+        <TextView
+            android:id="@+id/lblHeading1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Find out Next Task"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/avatar1"
+            app:layout_constraintTop_toTopOf="@+id/avatar1" />
+
+        <ImageView
+            android:id="@+id/imgMic2"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_microphone"
+            app:layout_constraintStart_toEndOf="@+id/avatar2"
+            app:layout_constraintTop_toBottomOf="@+id/lblHeading2" />
+
+        <ImageView
+            android:id="@+id/imgMic3"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_microphone"
+            app:layout_constraintStart_toEndOf="@+id/avatar3"
+            app:layout_constraintTop_toBottomOf="@+id/lblHeading3" />
+
+        <TextView
+            android:id="@+id/txtSay2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text='Say: "I have finished mopping aisle 3"'
+            app:layout_constraintBottom_toBottomOf="@+id/imgMic2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgMic2"
+            app:layout_constraintTop_toTopOf="@+id/imgMic2" />
+
+        <TextView
+            android:id="@+id/txtSay3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text='Say: "What am I supposed to be doing?"'
+            app:layout_constraintBottom_toBottomOf="@+id/imgMic3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgMic3"
+            app:layout_constraintTop_toTopOf="@+id/imgMic3" />
+
+        <TextView
+            android:id="@+id/lblPTTKey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Press the PTT Key before speaking"
+            android:textAlignment="center"
+            android:textColor="#3F51B5"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
