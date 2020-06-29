@@ -77,15 +77,14 @@ public class MainActivity extends AppCompatActivity implements Subject {
             if (action.equals(EXTRA_INTENT_ACTION))
             {
                 //  Received voice input.  Notify observers
-                Bundle b = intent.getExtras();
-                for (String key : b.keySet())
-                {
-                    //  todo why is this being called so many times??
-                    Log.v(LOG_TAG, key);
-                    String recognisedSpeech = intent.getStringExtra("com.symbol.datawedge.data_string");
-                    Log.i(LOG_TAG, recognisedSpeech);
-                    notifyObservers(recognisedSpeech);
-                }
+                //Bundle b = intent.getExtras();
+                //for (String key : b.keySet())
+                //{
+                //    Log.v(LOG_TAG, key);
+                //}
+                String recognisedSpeech = intent.getStringExtra("com.symbol.datawedge.data_string");
+                Log.i(LOG_TAG, recognisedSpeech);
+                notifyObservers(recognisedSpeech);
             }
         }
     };
