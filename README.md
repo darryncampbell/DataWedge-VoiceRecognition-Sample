@@ -1,3 +1,6 @@
+*Please be aware that this application / sample is provided as-is for demonstration purposes without any guarantee of support*
+=========================================================
+
 # DataWedge-VoiceRecognition-Sample
 
 Using your voice to control a mobile device is increasingly common in both consumer and enterprise environments, this application shows how you can use Zebra's DataWedge to recognize speech, convert it to text and capture the text in your app.
